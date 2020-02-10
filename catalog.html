@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Интернет магазин - Aurora</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <a href="index.html" class="logo">Aurora.com</a>
+                <div class="head_menu_pc">
+                    <ul  class="head_menu_pc_ul" style="display: none;">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="payment.html">Корзина</a></li>
+                        <li><a href="login.html">Войти</a></li>
+                    </ul>
+                    <div class="head_menu_pc_ul_button" onclick="menu_none()"></div>
+                </div>
+
+
+                <div class="head_menu_mb">
+                    <ul>
+                        <li><a href="index.html" id="index"></a></li>
+                        <li><a href="catalog.html" id="catalog"></a></li>
+                        <li><a href="faq.html" id="faq"></a></li>
+                        <li><a href="payment.html" id="payment"></a></li>
+                        <li><a href="login.html" id="login"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="content">
+
+                <div class="titlee">Catalog</div>
+
+                <div class="box1">
+                    <div class="title_box1" onclick="down(0)">MAN</div>
+
+                    <div class="content_box">
+                        <!-- <div class="section"><a href="#"></a></div> -->
+                        <div class="section"><a href="#">Рубашки</a></div>
+                        <div class="section"><a href="#">Брюки</a></div>
+                        <div class="section"><a href="#">Верхняя одежда</a></div>
+                        <div class="section"><a href="#">Штаны</a></div>
+                        <div class="section"><a href="#">Головные уборы</a></div>
+                        <div class="section"><a href="#">Футболки и майки</a></div>
+                        <div class="section"><a href="#">Обувь</a></div>
+                        <div class="section"><a href="#">Ремни</a></div>
+                        <div class="section"><a href="#">Очки</a></div>
+                        <div class="section"><a href="#">Шорты</a></div>
+                        <div class="section"><a href="#">Школьная форма</a></div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="box2">
+                    <div class="title_box2"  onclick="down(1)">WOMAN</div>
+                    <div class="content_box">
+                        <!-- <div class="section"><a href="#"></a></div> -->
+                        <div class="section"><a href="shirt.html">Блузки и рубашки</a></div>
+                        <div class="section"><a href="#">Брюки</a></div>
+                        <div class="section"><a href="#">Верхняя одежда</a></div>
+                        <div class="section"><a href="#">Джемперы</a></div>
+                        <div class="section"><a href="#">Джинсы</a></div>
+                        <div class="section"><a href="#">Жакеты</a></div>
+                        <div class="section"><a href="#">Кепки и шляпы</a></div>
+                        <div class="section"><a href="#">Комбинезоны</a></div>
+                        <div class="section"><a href="#">Купальники</a></div>
+                        <div class="section"><a href="#">Леггинсы</a></div>
+                        <div class="section"><a href="#">Майки</a></div>
+                        <div class="section"><a href="#">Обувь</a></div>
+                        <div class="section"><a href="#">Платья</a></div>
+                        <div class="section"><a href="#">Ремни</a></div>
+                        <div class="section"><a href="#">Свитеры</a></div>
+                        <div class="section"><a href="#">Очки</a></div>
+                        <div class="section"><a href="#">Сумки</a></div>
+                        <div class="section"><a href="#">Футболки и поло</a></div>
+                        <div class="section"><a href="#">Шарфики</a></div>
+                        <div class="section"><a href="#">Школьная форма</a></div>
+                        <div class="section"><a href="#">Шорты</a></div>
+                        <div class="section"><a href="#">Юбки</a></div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="pillow"></div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="inf">
+                <div class="block"><a href="#">Часто задаваемые вопросы</a></div>
+                <div class="block"><a href="#">Конфиденциальность</a></div>
+                <div class="block"><a href="#">Контакты</a></div>
+                <div class="block"><a href="#">Отзывы и предложения</a></div>
+            </div>
+
+
+            <div class="copyright">&copy Все права защищены 2018</div>
+        </div>
+
+        <script type="text/javascript">
+         // Тут нужно написать js скрипт который при запуске мобильной версии
+         // запускать эту функцию для элементов "content_box". Это даст им начальное
+         //  значение display, что поможет подгружать список после одного нажатия.
+            function down(i)
+            {
+                var a = document.getElementsByClassName("content_box")[i];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'block'
+                else
+                    a.style.display = 'none';
+            };
+
+            function menu_none()
+            {
+                var a = document.getElementsByClassName("head_menu_pc_ul")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline-block'
+                else
+                    a.style.display = 'none';
+
+            };
+
+        </script>
+
+    </body>
+</html>

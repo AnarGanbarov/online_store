@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Интернет магазин - Aurora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <a href="index.html" class="logo">Aurora.com</a>
+
+                <div class="head_menu_pc">
+                    <ul class="head_menu_pc_ul" style="display: none;">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="payment.html">Корзина</a></li>
+                        <li><a href="login.html">Войти</a></li>
+                    </ul>
+                    <div class="head_menu_pc_ul_button" onclick="menu_none()"></div>
+                </div>
+
+
+                <div class="head_menu_mb">
+                    <ul>
+                        <li><a href="index.html" id="index"></a></li>
+                        <li><a href="catalog.html" id="catalog"></a></li>
+                        <li><a href="faq.html" id="faq"></a></li>
+                        <li><a href="payment.html" id="payment"></a></li>
+                        <li><a href="login.html" id="login"></a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="title_faq">Войти или Зарегистрироваться</div>
+            <div class="content">
+
+            <div class="login_box">
+                <div class="title_login_box">Войти</div>
+                <input type="email" name="" value="" placeholder="email">
+                <input type="password" name="" value="" placeholder="password">
+                <div class="reset"><a href="#">Восстановить уч. запись</a></div>
+                <div class="b_login"><input type="button" name="" value="Войти"></div>
+
+            </div>
+
+            <div class="register_box">
+                 <div class="title_register_box">Регистрация</div>
+                <input type="text" name="" value="" placeholder="Имя">
+                <input type="text" name="" value="" placeholder="Фамилия">
+                <input type="text" name="" value="" placeholder="Отчество">
+                <input type="number" name="" value="" placeholder="Тел. номер">
+                <input type="text" name="" value="" placeholder="Адрес проживания">
+                <input type="email" name="" value="" placeholder="email">
+                <input type="password" name="" value="" placeholder="Пароль">
+                <input type="password" name="" value="" placeholder="Повторить пароль">
+
+
+                <div class="date_of_birth">Дата рождения</div>
+                <input type="date" name="date" value="">
+
+                <div class="class_gender">
+                    <label> Пол : <input type="radio" name="gender" value="man"> <span class="gender_square">М</span> </label>
+                    <label> <input type="radio" name="gender" value="woman"> <span class="gender_square">Ж</span> </label>
+                </div>
+
+
+                <div class="checkbox_resolution">
+                    <label>
+                        <input type="checkbox" name="" value="">
+                        <span>
+                            Даю разрещение на обработку персональных данных
+                        </span>
+                    </label>
+                </div>
+
+                <input id="b_register" type="button" name="" value="Зарегистрироваться">
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="pillow"></div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="inf">
+                <div class="block"><a href="#">Часто задаваемые вопросы</a></div>
+                <div class="block"><a href="#">Конфиденциальность</a></div>
+                <div class="block"><a href="#">Контакты</a></div>
+                <div class="block"><a href="#">Отзывы и предложения</a></div>
+            </div>
+
+
+            <div class="copyright">&copy Все права защищены 2018</div>
+        </div>
+
+        <script type="text/javascript">
+            function menu_none()
+            {
+                var a = document.getElementsByClassName("head_menu_pc_ul")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline-block'
+                else
+                    a.style.display = 'none';
+
+            };
+
+        </script>
+
+    </body>
+</html>

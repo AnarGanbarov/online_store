@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Интернет магазин - Aurora</title>
+        <link rel="stylesheet" href="admin_style.css">
+    </head>
+    <body>
+
+        <!-- Добавить скрипт JS, который будет проверять мобильная ли версия сайта
+            и если мобильная, то запускать функцию  sort_none() для того, чтобы появилось
+            меню сортировки без знака сортировки.-->
+        <div class="container">
+
+            <div class="header">
+                <a href="index.html" class="logo">Aurora.com</a>
+
+                <div class="head_menu_pc">
+                        <ul class="mmenuu">
+                            <li><a href="index_admin.html">Главная</a>
+                                <ul class="ssubmenuu">
+                                    <li><a href="login.html">Войти</a></li>
+                                    <li><a href="faq_admin.html">FAQ</a></li>
+                                    <li><a href="reset_admin.html">Восстановить пароль</a></li>
+                                    <li><a href="#">Заказы</a></li>
+                                    <li><a href="#">Посещаемость</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+                <div class="title_things">Заказы</div>
+                <div class="block_with_content">
+                </div>
+
+
+
+
+
+
+
+            <div class="pillow"></div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="inf">
+                <div class="block"><a href="#">Часто задаваемые вопросы</a></div>
+                <div class="block"><a href="#">Конфиденциальность</a></div>
+                <div class="block"><a href="#">Контакты</a></div>
+                <div class="block"><a href="#">Отзывы и предложения</a></div>
+            </div>
+
+
+            <div class="copyright">&copy Все права защищены 2018</div>
+        </div>
+
+        <script type="text/javascript">
+            function sort_none()
+            {
+                var a = document.getElementsByClassName("ul_sort")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline'
+                else
+                    a.style.display = 'none';
+
+            };
+
+            function menu_none()
+            {
+                var a = document.getElementsByClassName("head_menu_pc_select")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline-block'
+                else
+                    a.style.display = 'none';
+
+            };
+
+        </script>
+
+    </body>
+</html>

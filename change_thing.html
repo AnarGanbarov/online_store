@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Интернет магазин - Aurora</title>
+        <link rel="stylesheet" href="admin_style.css">
+    </head>
+    <body>
+
+        <!-- Добавить скрипт JS, который будет проверять мобильная ли версия сайта
+            и если мобильная, то запускать функцию  sort_none() для того, чтобы появилось
+            меню сортировки без знака сортировки.-->
+        <div class="container">
+
+            <div class="header">
+                <a href="index.html" class="logo">Aurora.com</a>
+
+                <div class="head_menu_pc">
+                        <ul class="mmenuu">
+                            <li><a href="index_admin.html">Главная</a>
+                                <ul class="ssubmenuu">
+                                    <li><a href="login.html">Войти</a></li>
+                                    <li><a href="faq_admin.html">FAQ</a></li>
+                                    <li><a href="reset_admin.html">Восстановить пароль</a></li>
+                                    <li><a href="#">Заказы</a></li>
+                                    <li><a href="#">Посещаемость</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+
+                <div class="block_with_content">
+
+                        <div class="big_image">
+                            <img src="big_image_2.jpg" alt="" >
+                        </div>
+                        <div class="additional_image">
+
+                            <div class="small_image"><img src="big_image_2.jpg" alt=""></div>
+                            <div class="small_image"><img src="1.jpg" alt=""></div>
+                            <div class="small_image"><img src="1.jpg" alt=""></div>
+                            <div class="small_image"><img src="1.jpg" alt=""></div>
+                            <div class="small_image"><img src="1.jpg" alt=""></div>
+                            <div class="small_image"><img src="1.jpg" alt=""></div>
+                            <div class="small_image"><img src="1.jpg" alt=""></div>
+                            <div class="small_image"><img src="1.jpg" alt=""></div>
+                            <div class="small_image"><img src="1.jpg" alt=""></div>
+                        </div>
+
+                        <div class="inf_about_thing">
+
+                            <div class="name_thing">Kaftan Amate Maxi</div>
+                            <div class="size">
+                                Размер:
+                                <label> <input type="radio" name="sizze" value="xs"> <span class="size_square">XS</span> </label>
+                                <label> <input type="radio" name="sizze" value="s"> <span class="size_square">S</span> </label>
+                                <label> <input type="radio" name="sizze" value="m"> <span class="size_square">M</span> </label>
+                                <label> <input type="radio" name="sizze" value="l">  <span class="size_square">L</span> </label>
+                            </div>
+                            <div class="color_thing">
+                                Цвет:
+                                <label> <input type="radio" name="colorr" value="white"> <span class="color_square">Белый</span> </label>
+                                <label> <input type="radio" name="colorr" value="red"> <span class="color_square">Красный</span> </label>
+                                <label> <input type="radio" name="colorr" value="blue"> <span class="color_square">Синий</span> </label>
+                                <label> <input type="radio" name="colorr" value="yellow">  <span class="color_square">Желтый</span> </label>
+                            </div>
+
+                            <div class="price_thing">
+                                Цена: 2 500 rub
+                            </div>
+
+                            <input id="in_cart" type="button" name="" value="В корзину">
+                        </div>
+                </div>
+
+                <div class="title_things">Редактирование товара</div>
+                <div class="block_with_content">
+                <form action="change_left.php">
+                    <div class="box_left">
+                        <div class="box_in_box_left">
+                            <div class="strr">Название* <input type="text" name="" value=""></div>
+                            <div class="strr">Цена* <input type="number" name="" value=""></div>
+                            <div class="strr">Старая цена <input type="number" name="" value=""></div>
+
+                            <div class="strr">
+                                Категория*
+                                <select class="" name="">
+                                    <option value="nothing">Не известно</option>
+                                    <option disabled>MAN</option>
+                                    <option value="shirt1">Рубашки</option>
+                                    <option value="shirt1">Брюки</option>
+                                    <option value="shirt1">Верхняя одежда</option>
+                                    <option disabled>WOMAN</option>
+                                    <option value="shirt1">Жакеты</option>
+                                    <option value="shirt1">Леггинсы</option>
+                                    <option value="shirt1">Очки</option>
+                                    <option value="shirt1">Сумки</option>
+                                </select>
+                            </div>
+
+                            <div class="strr">Артикул от производителя <input type="text" name="" value=""></div>
+                            <div class="strr"><span style="vertical-align:top;">Описание товара </span><textarea name="name" rows="8" cols="80"></textarea> <br></div>
+
+                            <div style="text-align:center;margin: 30px;"><input class="add_new_thing_admin_submit" type="submit" name="" value="Сохранить"></div>
+                        * - обязательные для заполнения поля.
+                        </div>
+
+                    </div>
+                </form>
+                <form action="change_right.php">
+                    <div class="box_right">
+                        Добавьте фотографии (до 9 шт) и отметьте различные цвета (максимальное количество 6 штук) <br>
+
+                        <div class="add_new_photo">
+                            <div class="left_box_in_new_photo">
+                                <div class="small_image"><img src="1.jpg" alt=""></div>
+                            </div>
+                            <div class="center_box_in_new_photo">
+                                <input class="add_photo" type="button" name="" value="/\">
+                                <input class="add_photo" type="button" name="" value="\/">
+                            </div>
+
+                            <input type="checkbox" name="" value="">Отметить как другой цвет
+                            <div class="right_box_in_new_photo">
+                                <input class="add_photo" type="button" name="" value="Удалить">
+                            </div>
+
+                        </div>
+
+                        <div class="add_new_photo">
+                            <div class="left_box_in_new_photo">
+                                <div class="small_image"><img src="1.jpg" alt=""></div>
+                            </div>
+                            <div class="center_box_in_new_photo">
+                                <input class="add_photo" type="button" name="" value="/\">
+                                <input class="add_photo" type="button" name="" value="\/">
+                            </div>
+
+                            <input type="checkbox" name="" value="">Отметить как другой цвет
+                            <div class="right_box_in_new_photo">
+                                <input class="add_photo" type="button" name="" value="Удалить">
+                            </div>
+
+                        </div>
+
+                        <div class="add_new_photo">
+                            <div class="left_box_in_new_photo">
+                                <div class="small_image"><img src="1.jpg" alt=""></div>
+                            </div>
+                            <div class="center_box_in_new_photo">
+                                <input class="add_photo" type="button" name="" value="/\">
+                                <input class="add_photo" type="button" name="" value="\/">
+                            </div>
+
+                            <input type="checkbox" name="" value="">Отметить как другой цвет
+                            <div class="right_box_in_new_photo">
+                                <input class="add_photo" type="button" name="" value="Удалить">
+                            </div>
+
+                        </div>
+
+
+                        <input type="file" name="" value="">
+                        <div style="text-align:center;margin: 30px;"><input class="add_new_thing_admin_submit" type="submit" name="" value="Сохранить"></div>
+
+                    </div>
+                </form>
+            </div>
+
+
+
+                <div class="title_things">Добавление товара на склад</div>
+                <div class="block_with_content">
+                    <form action="index.html" method="post">
+                        <div class="add_in_stock">
+                            <div class="box_in_add_in_stock">
+                                <div class="strr">Цвет <input type="text"></div>
+                                <div class="strr">Размер <input type="text"></div>
+                                <div class="strr">Надбавочная цена <input type="text"></div>
+                                <div class="strr">Количество <input type="text"></div>
+                                <div style="text-align:center;margin: 30px;"><input class="add_new_thing_admin_submit" type="submit" name="" value="Сохранить"></div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                    <input class="group_thing" type="button" name="" value="Сгруппировать по цвету">
+                    <input class="group_thing" type="button" name="" value="Сгруппировать по размеру">
+                    <input class="group_thing" type="button" name="" value="Сгруппировать по цвету и размеру">
+
+                    <div class="look_on_stock">
+                        <table class="table_stock">
+                                <tr>
+                                  <td># вещи</td>
+                                  <td>Артикул</td>
+                                  <td>Цвет</td>
+                                  <td>Размер</td>
+                                  <td>Статус</td>
+                                  <td>Цена</td>
+                                  <td>Старая цена</td>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                  <td># вещи</td>
+                                  <td>Артикул</td>
+                                  <td>Цвет</td>
+                                  <td>Размер</td>
+                                  <td>Статус</td>
+                                  <td>Цена</td>
+                                  <td>Старая цена</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>4</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                        </table>
+                    </div>
+            </div>
+
+
+
+
+
+            <div class="pillow"></div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="inf">
+                <div class="block"><a href="#">Часто задаваемые вопросы</a></div>
+                <div class="block"><a href="#">Конфиденциальность</a></div>
+                <div class="block"><a href="#">Контакты</a></div>
+                <div class="block"><a href="#">Отзывы и предложения</a></div>
+            </div>
+
+
+            <div class="copyright">&copy Все права защищены 2018</div>
+        </div>
+
+        <script type="text/javascript">
+            function sort_none()
+            {
+                var a = document.getElementsByClassName("ul_sort")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline'
+                else
+                    a.style.display = 'none';
+
+            };
+
+            function menu_none()
+            {
+                var a = document.getElementsByClassName("head_menu_pc_select")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline-block'
+                else
+                    a.style.display = 'none';
+
+            };
+
+        </script>
+
+    </body>
+</html>

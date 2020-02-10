@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Интернет магазин - Aurora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="header">
+                    <a href="index.html" class="logo">Aurora.com</a>
+                    <div class="head_menu_pc">
+                        <ul class="head_menu_pc_ul" style="display: none;">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">Корзина</a></li>
+                            <li><a href="login.html">Войти</a></li>
+                        </ul>
+                        <div class="head_menu_pc_ul_button" onclick="menu_none()"></div>
+                    </div>
+
+
+
+
+
+                <div class="head_menu_mb">
+                    <ul>
+                        <li><a href="index.html" id="index"></a></li>
+                        <li><a href="catalog.html" id="catalog"></a></li>
+                        <li><a href="faq.html" id="faq"></a></li>
+                        <li><a href="#" id="payment"></a></li>
+                        <li><a href="login.html" id="login"></a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="content">
+                <!-- <button type="button" >sdsd
+                </button> -->
+
+
+                    <div class="right">
+                        <div class="title_right">Оформление заказа</div>
+                        <div class="box_right">
+                            <div class="loginn">
+                                <button id="login_register">Войти / Зарегистрироваться</button>
+                            </div>
+                            <div class="or">или</div>
+                            <div class="without_register">
+                                <div class="title_register">Без регистрации</div>
+                                <input type="text" class="input_register" placeholder="Имя"> <br>
+                                <input type="text" class="input_register" placeholder="Фамилия"> <br>
+                                <input type="text" class="input_register" placeholder="Отчество"> <br>
+                                <input type="text" class="input_register" placeholder="Адрес"> <br>
+                                <input type="text" class="input_register" placeholder="Тел. номер"><br>
+                                <textarea rows="5" class="input_register2" placeholder="Комментарии курьеру"></textarea>
+                                <button id="go_to_payment">Перейти к оплате</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="title_left">Корзина ( 99 )</div>
+                        <div class="box_left">
+                            <div class="cart_thing">
+
+
+                                <div class="box_cart_thing">
+                                    <button id="delete" title="Удалить из корзины">X</button>
+                                    <div class="img_cart_thing">
+                                        <img src="1.jpg" alt="1.jpg" height=120px>
+                                    </div>
+                                    <div class="inf_cart_thing">
+                                        <!-- <button id="delete">X</button> -->
+                                        <div class="name">Платье Amate Maxi </div>
+                                        <div class="size">Размер : S </div>
+                                        <div class="color">Цвет : Розовый</div>
+                                        <div class="vendor_code"> #12323232</div>
+                                        <div class="price">
+                                            <div class="price1">450 руб.</div>
+
+                                            <div class="pricee">
+                                                <button id="m">-</button>
+                                                <input type="number" value="1" min="1">
+                                                <button id="p">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="box_cart_thing">
+                                    <button id="delete" title="Удалить из корзины">X</button>
+                                    <div class="img_cart_thing">
+                                        <img src="1.jpg" alt="1.jpg" height=120px>
+                                    </div>
+                                    <div class="inf_cart_thing">
+
+                                        <div class="name">Платье Amate Maxi</div>
+                                        <div class="size">Размер : S </div>
+                                        <div class="color">Цвет : Розовый</div>
+                                        <div class="vendor_code"> #12323232</div>
+                                        <div class="price">
+                                            <div class="price1">450 руб x 3 = 1350 руб.</div>
+
+                                            <div class="pricee">
+                                                <button id="m">-</button>
+                                                <input type="number" value="1" min="1">
+                                                <button id="p">+</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="result">
+                                <div class="goods"><span>Товары:</span>  <span id="p2">1 950 руб.</span></div>
+                                <div class="delivery"> <span>Доставка:</span> <span id="p2">100 руб.</span></div>
+                                <div class="total"><span>Итог:</span> <span id="p2">2 050 руб.</span> </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+            </div>
+
+            <div class="pillow"></div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="inf">
+                <div class="block"><a href="#">Часто задаваемые вопросы</a></div>
+                <div class="block"><a href="#">Конфиденциальность</a></div>
+                <div class="block"><a href="#">Контакты</a></div>
+                <div class="block"><a href="#">Отзывы и предложения</a></div>
+            </div>
+
+
+            <div class="copyright">&copy Все права защищены 2018</div>
+        </div>
+
+        <script type="text/javascript">
+            function menu_none()
+            {
+                var a = document.getElementsByClassName("head_menu_pc_ul")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline-block'
+                else
+                    a.style.display = 'none';
+            };
+        </script>
+
+    </body>
+</html>

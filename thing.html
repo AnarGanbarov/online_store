@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Интернет магазин - Aurora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <a href="index.html" class="logo">Aurora.com</a>
+
+                <div class="head_menu_pc">
+                    <ul class="head_menu_pc_ul" style="display: none;">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="payment.html">Корзина</a></li>
+                        <li><a href="login.html">Войти</a></li>
+                    </ul>
+                    <div class="head_menu_pc_ul_button" onclick="menu_none()"></div>
+                </div>
+
+
+                <div class="head_menu_mb">
+                    <ul>
+                        <li><a href="index.html" id="index"></a></li>
+                        <li><a href="catalog.html" id="catalog"></a></li>
+                        <li><a href="faq.html" id="faq"></a></li>
+                        <li><a href="payment.html" id="payment"></a></li>
+                        <li><a href="login.html" id="login"></a></li>
+                    </ul>
+                    <!-- <ul>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                        <li><a href="catalog.html"><span class="glyphicon glyphicon-folder-open"></span></a></li>
+                        <li><a href="faq.html"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+                        <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                         <span class="glyphicon glyphicon-log-in"></span>
+                    </ul> -->
+
+                </div>
+
+            </div>
+
+
+
+            <div class="content">
+                <div class="big_image">
+                    <img src="big_image_2.jpg" alt="" >
+                </div>
+                <div class="additional_image">
+                    <div class="small_image">
+                        <img src="big_image_2.jpg" alt="">
+                    </div>
+
+                    <div class="small_image">
+                        <img src="1.jpg" alt="">
+                    </div>
+                    <div class="small_image"><img src="1.jpg" alt=""></div>
+                    <div class="small_image"><img src="1.jpg" alt=""></div>
+                    <div class="small_image"><img src="1.jpg" alt=""></div>
+                    <div class="small_image"><img src="1.jpg" alt=""></div>
+                    <div class="small_image"><img src="1.jpg" alt=""></div>
+                    <div class="small_image"><img src="1.jpg" alt=""></div>
+                    <div class="small_image"><img src="1.jpg" alt=""></div>
+                </div>
+
+                <div class="inf_about_thing">
+
+                    <div class="name_thing">Kaftan Amate Maxi</div>
+                    <div class="size">
+                        Размер:
+                        <label> <input type="radio" name="sizze" value="xs"> <span class="size_square">XS</span> </label>
+                        <label> <input type="radio" name="sizze" value="s"> <span class="size_square">S</span> </label>
+                        <label> <input type="radio" name="sizze" value="m"> <span class="size_square">M</span> </label>
+                        <label> <input type="radio" name="sizze" value="l">  <span class="size_square">L</span> </label>
+                    </div>
+                    <div class="color_thing">
+                        Цвет:
+                        <label> <input type="radio" name="colorr" value="white"> <span class="color_square">Белый</span> </label>
+                        <label> <input type="radio" name="colorr" value="red"> <span class="color_square">Красный</span> </label>
+                        <label> <input type="radio" name="colorr" value="blue"> <span class="color_square">Синий</span> </label>
+                        <label> <input type="radio" name="colorr" value="yellow">  <span class="color_square">Желтый</span> </label>
+                    </div>
+
+                    <div class="price_thing">
+                        Цена: 2 500 rub
+                    </div>
+
+                    <input id="in_cart" type="button" name="" value="В корзину">
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="pillow"></div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="inf">
+                <div class="block"><a href="#">Часто задаваемые вопросы</a></div>
+                <div class="block"><a href="#">Конфиденциальность</a></div>
+                <div class="block"><a href="#">Контакты</a></div>
+                <div class="block"><a href="#">Отзывы и предложения</a></div>
+            </div>
+
+
+            <div class="copyright">&copy Все права защищены 2018</div>
+        </div>
+
+        <script type="text/javascript">
+            function sort_none()
+            {
+                var a = document.getElementsByClassName("ul_sort")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline'
+                else
+                    a.style.display = 'none';
+
+            };
+
+            function menu_none()
+            {
+                var a = document.getElementsByClassName("head_menu_pc_ul")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline-block'
+                else
+                    a.style.display = 'none';
+
+            };
+
+        </script>
+
+    </body>
+</html>

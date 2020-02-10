@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Интернет магазин - Aurora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Добавить скрипт JS, который будет проверять мобильная ли версия сайта
+            и если мобильная, то запускать функцию  sort_none() для того, чтобы появилось
+            меню сортировки без знака сортировки.-->
+        <div class="container">
+
+            <div class="header">
+                <a href="index.html" class="logo">Aurora.com</a>
+
+                <div class="head_menu_pc">
+                    <ul class="head_menu_pc_ul" style="display: none;">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="payment.html">Корзина</a></li>
+                        <li><a href="login.html">Войти</a></li>
+                    </ul>
+                    <div class="head_menu_pc_ul_button" onclick="menu_none()"></div>
+                </div>
+
+
+                <div class="head_menu_mb">
+                    <ul>
+                        <li><a href="index.html" id="index"></a></li>
+                        <li><a href="catalog.html" id="catalog"></a></li>
+                        <li><a href="faq.html" id="faq"></a></li>
+                        <li><a href="payment.html" id="payment"></a></li>
+                        <li><a href="login.html" id="login"></a></li>
+                    </ul>
+                    <!-- <ul>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                        <li><a href="catalog.html"><span class="glyphicon glyphicon-folder-open"></span></a></li>
+                        <li><a href="faq.html"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+                        <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                         <span class="glyphicon glyphicon-log-in"></span>
+                    </ul> -->
+
+                </div>
+
+            </div>
+
+
+            <div class="title_things">SHIRT</div>
+            <div class="content">
+                <div class="sorting_header">
+                    <ul class="ul_sort" style="display:none;">
+                        <li><a href="#">Популярность \/</a></li>
+                        <li><a href="#">Цена \/</a></li>
+                        <li><a href="#">Цена /\</a></li>
+                        <li><a href="#">Рейтинг \/</a></li>
+                    </ul>
+
+                    <div class="icon_sort" onclick="sort_none()" ></div>
+                </div>
+
+                <a href="thing.html">
+                    <div class="cart_for_things" >
+                        <div class="img_in_cart_thing"><img src="new_image.jpg" alt="#"> </div>
+                        <div class="inf_in_cart_thing">
+                            <div class="name_in_cart_thing">Рубашка Amerto Bemerto Fori</div>
+                            <div class="price_in_cart_thing">1 200 rub</div>
+                            <div class="old_price_in_cart_thing">2 400 rub</div>
+                            <div class="color_catalog">
+                                <div class="img_color"><img src="new_image.jpg" alt="" style="outline: 1px solid #000;"></div>
+                                <div class="img_color"><img src="new_image_2.jpg" alt=""></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </a>
+                <div class="cart_for_things">
+                    <div class="img_in_cart_thing"><img src="new_image_3.jpg" alt="#"> </div>
+                    <div class="inf_in_cart_thing">
+                        <div class="name_in_cart_thing">Рубашка Amerto Bemerto Fori</div>
+                        <div class="price_in_cart_thing">1 200 rub</div>
+                        <div class="old_price_in_cart_thing"></div>
+                        <!-- <div class="color_catalog">
+                            <div class="img_color"><img src="new_image.jpg" alt=""></div>
+                            <div class="img_color"><img src="new_image_2.jpg" alt=""></div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <div class="cart_for_things">
+                    <div class="img_in_cart_thing"><img src="new_image.jpg" alt="#"> </div>
+                    <div class="inf_in_cart_thing">
+                        <div class="name_in_cart_thing">Рубашка Amerto Bemerto Fori</div>
+                        <div class="price_in_cart_thing">1 200 rub</div>
+                        <div class="old_price_in_cart_thing"></div>
+                        <div class="color_catalog">
+                            <div class="img_color"><img src="new_image.jpg" alt="" style="outline: 1px solid #000;"></div>
+                            <div class="img_color"><img src="new_image_2.jpg" alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart_for_things">
+                    <div class="img_in_cart_thing"><img src="new_image.jpg" alt="#"> </div>
+                    <div class="inf_in_cart_thing">
+                        <div class="name_in_cart_thing">Рубашка Amerto Bemerto Fori</div>
+                        <div class="price_in_cart_thing">1 200 rub</div>
+                        <div class="old_price_in_cart_thing">2 400 rub</div>
+                        <!-- <div class="color_catalog">
+                            <div class="img_color"><img src="new_image.jpg" alt=""></div>
+                            <div class="img_color"><img src="new_image_2.jpg" alt=""></div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="pillow"></div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="inf">
+                <div class="block"><a href="#">Часто задаваемые вопросы</a></div>
+                <div class="block"><a href="#">Конфиденциальность</a></div>
+                <div class="block"><a href="#">Контакты</a></div>
+                <div class="block"><a href="#">Отзывы и предложения</a></div>
+            </div>
+
+
+            <div class="copyright">&copy Все права защищены 2018</div>
+        </div>
+
+        <script type="text/javascript">
+            function sort_none()
+            {
+                var a = document.getElementsByClassName("ul_sort")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline'
+                else
+                    a.style.display = 'none';
+
+            };
+
+            function menu_none()
+            {
+                var a = document.getElementsByClassName("head_menu_pc_ul")[0];
+                if ( a.style.display == 'none' )
+                    a.style.display = 'inline-block'
+                else
+                    a.style.display = 'none';
+
+            };
+
+        </script>
+
+    </body>
+</html>
